@@ -1,17 +1,17 @@
-document.addEventListener('click',
-    (event) => {
-        let lis = document.querySelectorAll('nav ul li');
-        console.log(lis);
-        lis.forEach(e => {
-            e.onclick = () => {
-                console.log(e);
-                lis.forEach(e => e.classList.remove("active"));
-                e.classList.add("active");
-            };
+// document.addEventListener('click',
+//     (event) => {
+//         let lis = document.querySelectorAll('nav ul li');
+//         console.log(lis);
+//         lis.forEach(e => {
+//             e.onclick = () => {
+//                 console.log(e);
+//                 lis.forEach(e => e.classList.remove("active"));
+//                 e.classList.add("active");
+//             };
 
-        });
-    }
-);
+//         });
+//     }
+// );
 
 function scrollToElement(elementId) {
     var element = document.getElementById(elementId);
@@ -42,5 +42,19 @@ fourthSection.forEach(element => {
     element.style.height = '100%';
     element.style.position = 'absolute';
     element.style.background = '#B989BD';
-    // element.style.css=`width:${element.getAttribute('data-progress')};background-color: #2196f3;`;
+    element.style.css = `width:${element.getAttribute('data-progress')};background-color: #2196f3;`;
 });
+
+
+
+let progressSpans = document.querySelectorAll(".progress span");
+let section = document.querySelector(".skills");
+
+window.onscroll = function () {
+    // Skills Animate Width
+    if (window.scrollY >= section.offsetTop - 250) {
+        progressSpans.forEach((span) => {
+            span.style.width = span.dataset.width;
+        });
+    }
+};
