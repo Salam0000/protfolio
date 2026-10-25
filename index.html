@@ -12,7 +12,7 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Protfolio</title>
+    <title>Portfolio</title>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                             <a class="nav-link" onclick="scrollToElement('skills')">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" onclick="scrollToElement('protfolio')">Protfolio</a>
+                            <a class="nav-link" onclick="scrollToElement('protfolio')">Portfolio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" onclick="scrollToElement('contact')">Contact</a>
@@ -53,24 +53,79 @@
         </nav>
     </header>
 
+
     <div class="section_one" id="home">
         <div class="section_one_left_column">
             <h3>Hello, I am Salam</h3>
             <p>
-                I am a software engineering student with a passion for programming and technology. My journey in tech
-                spans mobile app development with Flutter, frontend web development with Angular.
-                I enjoy building projects from architecture and logic to UI/UX design.
-                I am always exploring new technologies and looking for opprtunites to grow.
+                I'm a software developer focused on building clean, reliable, and user-friendly applications. I enjoy
+                solving practical problems, learning new technologies, and turning ideas into well-structured software.
+                I'm currently seeking a developer internship or junior role where I can contribute to meaningful
+                projects and grow as an engineer.
             </p>
-            <button onclick="scrollToElement('contact')">Contact Me</button>
+            <button onclick="window.open('assets/files/resume.pdf', '_blank', 'noopener')">
+                View résumé
+            </button>
+            <!-- <button onclick="scrollToElement('contact')">Contact Me</button> -->
         </div>
         <div class="section_one_right_column">
-            <img src="profile.jpg" alt="something went wrong">
+            <img src="assets/images/profile.jpg" alt="something went wrong">
         </div>
 
     </div>
 
-    <div class="fourth_section_holder skills" id="skills">
+
+    <section class="skills_section" id="skills">
+        <div class="container">
+            <h2>What I work with</h2>
+
+            <div class="skills_grid">
+
+                <div class="skill_card">
+                    <i class='bx bxl-html5'></i>
+                    <h3>HTML5</h3>
+                </div>
+
+                <div class="skill_card">
+                    <i class='bx bxl-css3'></i>
+                    <h3>CSS3</h3>
+                </div>
+
+                <div class="skill_card">
+                    <i class='bx bxl-javascript'></i>
+                    <h3>JavaScript</h3>
+                </div>
+
+                <div class="skill_card">
+                    <i class='bx bxl-bootstrap'></i>
+                    <h3>Bootstrap</h3>
+                </div>
+
+                <div class="skill_card">
+                    <i class='bx bxl-angular'></i>
+                    <h3>Angular</h3>
+                </div>
+
+                <div class="skill_card">
+                    <i class='bx bxl-flutter'></i>
+                    <h3>Flutter</h3>
+                </div>
+
+                <div class="skill_card">
+                    <i class='bx bxl-python'></i>
+                    <h3>Python</h3>
+                </div>
+
+                <div class="skill_card">
+                    <i class='bx bxl-git'></i>
+                    <h3>Git</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="fourth_section_holder skills" id="skills">
         <div class="main_title">Skills</div>
         <div class="skills-content ">
             <div class="skills-header">
@@ -123,95 +178,137 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
     <div class="third_section" id="protfolio">
-        <div class="main_title">Protfolio</div>
+        <div class="main_title">Portfolio</div>
         <div class="container">
             <div class="box">
-                <img src="bondi.png" alt="" />
+                <img src="assets/images/bondi.png" alt="" />
                 <div class="content">
                     <h3>Bondi </h3>
                     <p>A modern Bootstrap-based creative agency portfolio website showcasing services, projects, team
                         members, and blog content through a clean, responsive design.</p>
                 </div>
+
+                <ul class="project_technologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                </ul>
+
                 <div class="info">
                     <a href="https://salam0000.github.io/boostrap_project/">See the website</a>
                     <i class="bx bx-arrow-right" style="color:#6F2877;"></i>
                 </div>
             </div>
             <div class="box">
-                <img src="elzero_template.png" alt="" />
+                <img src="assets/images/elzero_template.png" alt="" />
                 <div class="content">
                     <h3>Html & CSS template </h3>
                     <p>A responsive HTML/CSS portfolio and business landing page featuring services, articles, gallery
                         sections, skills, pricing plans, and contact information in a clean, modern design.</p>
                 </div>
+                 <ul class="project_technologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
                 <div class="info">
                     <a href="https://salam0000.github.io/html_css_template">See the website</a>
                     <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
             </div>
             <div class="box">
-                <img src="calc_age.png" alt="" />
+                <img src="assets/images/calc_age.png" alt="" />
                 <div class="content">
                     <h3>Age Calculator </h3>
                     <p>A simple and interactive age calculator web application that instantly calculates a user's age in
                         years, months, and days based on their birth date.</p>
                 </div>
+                 <ul class="project_technologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
                 <div class="info">
                     <a href="https://salam0000.github.io/age_calculator/">See the website</a>
                     <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
             </div>
             <div class="box">
-                <img src="bank.png" alt="" />
+                <img src="assets/images/bank.png" alt="" />
                 <div class="content">
                     <h3>Easy Bank template </h3>
                     <p>A modern banking landing page that showcases digital banking services, features, articles, and
                         call-to-action sections with a clean user-friendly design.</p>
                 </div>
+                <ul class="project_technologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
                 <div class="info">
                     <a href="https://salam0000.github.io/easy_bank_page/">See the website</a>
                     <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
             </div>
             <div class="box">
-                <img src="summary.png" alt="" />
+                <img src="assets/images/summary.png" alt="" />
                 <div class="content">
                     <h3>Result Summary template </h3>
                     <p>A clean and responsive results summary component that visually displays scores, and
                         category-based statistics in an intuitive dashboard-style layout.</p>
                 </div>
+                 <ul class="project_technologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
                 <div class="info">
                     <a href="https://salam0000.github.io/result_summary_component/">See the website</a>
                     <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
             </div>
             <div class="box">
-                <img src="space.png" alt="" />
+                <img src="assets/images/space.png" alt="" />
                 <div class="content">
                     <h3>Space Tourism template </h3>
                     <p>A modern space tourism website featuring immersive destination, crew, and technology sections
                         with a sleek and futuristic.</p>
                 </div>
+                 <ul class="project_technologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
                 <div class="info">
                     <a href="https://salam0000.github.io/space_tourism/">See the website</a>
                     <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
             </div>
             <div class="box">
-                <img src="daarbni.png" alt="" />
+                <img src="assets/images/daarbni.png" alt="" />
                 <div class="content">
                     <h3>National Examination </h3>
-                    <p>A responsive web application for Syrian National Exam candidates, enabling users to practice categorized questions, take mock exams.</p>
+                    <p>A responsive web application for Syrian National Exam candidates, enabling users to practice
+                        categorized questions, take mock exams.</p>
                 </div>
+                 <ul class="project_technologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>Angular</li>
+                </ul>
                 <div class="info">
                     <a href="https://github.com/Salam0000/National-examination/tree/master">See on Github</a>
                     <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
             </div>
             <div class="box">
-                <img src="ecom.png" alt="" />
+                <img src="assets/images/ecom.png" alt="" />
                 <div class="content">
                     <h3>Ecommerce Fake Api</h3>
                     <p>
@@ -219,19 +316,31 @@
                         product browsing, cart management.
                     </p>
                 </div>
+                 <ul class="project_technologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>Angular</li>
+                </ul>
                 <div class="info">
                     <a href="https://github.com/Salam0000/ecommerce_fake_api/tree/master">See on Github</a>
                     <i class="fas fa-long-arrow-alt-right"></i>
                 </div>
             </div>
             <div class="box">
-                <img src="personel.png" alt="" />
+                <img src="assets/images/personel.png" alt="" />
                 <div class="content">
                     <h3>Personal Expenses App</h3>
                     <p>
-                        Developed a cross-platform personal expense using Flutter weekly spending visualization, and an intuitive user interface.
+                        Developed a cross-platform personal expense using Flutter weekly spending visualization, and an
+                        intuitive user interface.
                     </p>
                 </div>
+                 <ul class="project_technologies">
+                    <li>Dart</li>
+                    <li>Flutter</li>
+                </ul>
                 <div class="info">
                     <a href="https://github.com/Salam0000/personal_expenses_application">See on Github</a>
                     <i class="fas fa-long-arrow-alt-right"></i>
@@ -240,6 +349,7 @@
         </div>
 
     </div>
+
     <div class="second_section_holder" id="contact">
         <div class="main_title">Contact Me</div>
         <div class="second_section_container">
@@ -294,7 +404,7 @@
                     </li>
                     <li><a onclick="scrollToElement('skills')">Skills</a>
                     </li>
-                    <li><a onclick="scrollToElement('protfolio')">Protfolio</a>
+                    <li><a onclick="scrollToElement('protfolio')">Portfolio</a>
                     </li>
                     <li><a onclick="scrollToElement('contact')">Contact</a>
                     </li>
